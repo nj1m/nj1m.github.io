@@ -11,3 +11,8 @@ h1 {
 h2 {
   color: green;
 }
+
+.ecosystem {
+  height: 100px;
+  width: 200px;
+}
