@@ -1,13 +1,10 @@
 body {
   background-color: black;
   color: white;
+  font-family: 'Linotype - NeuzeitOfficePro-Regular' sans-serif;
 }
 
 h1 {
-  color: blue;
-}
-
-h2 {
   color: green;
 }
 
