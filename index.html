@@ -1,128 +1,45 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>NJM</title>
-  <link rel="stylesheet" href="css/main.css">
-</head>
+<!DOCTYPE HTML>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Asap:wght@400;500;700&display=swap" rel="stylesheet">
+    <title>Rock Paper Scissors</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
 
-<body>
-  <div class="navbar">
-    <div class="container">
-      <a class="logo" href="#">NJM's <span>UX Reference Guide</span></a>
+  <body>
+    <header>
+      <h1>Rock Paper Scissors</h1>
+    </header>
 
-        <img id="mobile-cta" class="mobile-menu" src="" alt="hamburger-menu">
-
-        <nav>
-          <img id="mobile-exit" class="mobile-menu-exit" src="" alt="arrow-down">
-          <ul class="primary-nav">
-            <li class="current"> <a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Blog</a></li>
-          </ul>
-
-          <ul class="secondary-nav">
-            <li><a href="#">Contact</a></li>
-            <li class="go-premium-cta"><a href="#">Portfolio</a></li>
-          </ul>
-        </nav>
+    <div class="score-board">
+      <div id="user-label" class="badge">user</div>
+      <div id="computer-label" class="badge">comp</div>
+      <span id="user-score">0</span>:<span id="computer-score">0</span>
     </div>
-  </div>
 
-  <section class="hero">
-    <div class="container">
-      <div class="left-col">
-        <p class="subhead">UX &amp; UI Design</p>
-        <h1>Quick Cheat Sheet</h1>
+    <div class="result">
+      <p>Choose rock, paper or scissors to beat the computer</p>
+    </div>
 
-        <div class="hero-cta">
-          <a href="#" class="primary-cta">Click here for UX glossary</a>
-          <a href=""><img src="" title="source: imgur.com" /></a>
-          <a href="#" class="watch-video-cta"></a>
-
-        </div>
+    <div class="choices">
+      <div class="choice" id="r">
+        <img src="images/rock.png" alt="">
       </div>
-
-      <img src="" alt="headshot">
-    </div>
-  </section>
-
-  <section class="features-section">
-    <div class="container">
-      <ul class="features-list">
-        <li>User Research</li>
-        <li>Analysis Techniques</li>
-        <li>Structure & Navigation</li>
-        <li>Interactions</li>
-        <li>Design Principles & Patterns</li>
-        <li>Mobile</li>
-        <li>Workflows</li>
-        <li>Prototyping & Handover</li>
-      </ul>
-
-      <img src="Margaret_Mead.png" alt="Margaret Mead headshot">
-    </div>
-  </section>
-
-  <section class="testimonials-section">
-    <div class="container">
-      <ul>
-        <li>
-          <img src="" alt="headshot">
-          <blockquote cite="https://www.bbc.co.uk/news">Margaret Mead</blockquote>
-        </li>
-        <li>
-          <img src="David_Hilbert.png" alt="David Hilbert headshot">
-          <blockquote cite="https://www.bbc.co.uk/news">David Hilbert</blockquote>
-        </li>
-        <li>
-          <img src="images/headshot.png" alt="headshot">
-          <blockquote cite="https://www.bbc.co.uk/news">NJM</blockquote>
-        </li>
-      </ul>
-    </div>
-  </section>
-
-  <section class="contact-section">
-    <div class="container">
-      <div class="contact-left">
-        <h2>Contact</h2>
-        <form class="" action="index.html" method="post">
-          <label for="name">Name</label>
-          <input type="text" name="name" value="">
-
-          <label for="email">Email</label>
-          <input type="email" name="email" value="">
-
-          <label for="message">Message</label>
-          <textarea name="message" rows="8" cols="30"></textarea>
-
-          <input type="submit" class="send-message-cta" name="" value="Send message">
-        </form>
+      <div class="choice" id="p">
+        <img src="images/paper.png" alt="">
       </div>
-
-      <div class="contact-right">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4389.6707561349895!2d-3.88892187176896!3d56.6255017752223!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4888a43537793285%3A0xfae5a283bb1d9a8f!2sWeem%2C%20Aberfeldy!5e0!3m2!1sen!2suk!4v1624277362793!5m2!1sen!2suk" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+      <div class="choice" id="s">
+        <img src="images/scissors.png" alt="">
       </div>
-
     </div>
-  </section>
 
-  <script>
-    const mobileBtn = document.getElementById('mobile-cta')
-          nav = document.querySelector('nav')
-          mobileBtnExit = document.getElementById('mobile-exit');
+    <p id="action-message">Make your move by selecting an image above</p>
 
-    mobileBtn.addEventListener('click', () => {
-          nav.classList.add('menu-btn');
-    })
+    <script src="app.js" type="text/javascript">
 
-    mobileBtnExit.addEventListener('click', () => {
-          nav.classList.remove('menu-btn');
-    })
-  </script>
+    </script>
 
-</body>
+  </body>
 </html>
